@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware("auth")
     ->namespace("Admin")
     ->name("admin.")
@@ -31,7 +32,7 @@ Route::middleware("auth")
     });
 
 
-//Route::get('/home', 'HomeController@index')->name('home');
+
 
 // Route::get("{any?}", function () {
 //     return view("guests.home");
